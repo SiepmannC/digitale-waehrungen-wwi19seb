@@ -4,8 +4,12 @@
 
 ### Distributed Ledgers / Verteilte Logbücher
 Unter welchen Umständen ist die Nutzung von verteilten Logbüchern im Vergleich zu zentral verwalteten Logbüchern aus Ihrer Sicht empfehlenswert?
+- Daten werden verteilt und können nicht so leicht missbraucht werden
+- 
 
 Was ist für Sie das revolutionär Neue an der Blockchaintechnologie?
+- Durch die dezantralität des Systems ist es möglich, die Macht der Internetanbieter wie Meta, Google etc. enzuschränken, weil sichergestellt werden kann, dass nicht jede meiner Anfragen über den Meta-Server geht, welcher Meine Informationen speichert und weiterverkauft (Hierbei besonders auf WEB3 bezogen)
+- Durch die Möglichkeit der  
 
 Inwiefern können wir eine Blockchain als öffentliche, verteilte Datenbank betrachten?
 
@@ -16,20 +20,31 @@ Hilfestellung / gehen sie dabei vieleicht auf die folgenden Apekte ein...: welch
 ### Einwegfunktionen
 
 Welche Einwegfunktion spielt im Bitcoin System eine wesentliche Rolle bzw. zwei wesentliche Rollen? Bitte erläutern Sie dies.
+- Einwegfunktion ist die Hashfunktion
+- Aktuell wird Shar256 hauptsächlich verwednet
+- gibt aber auch Shar512 besipielsweise mit einer höheren Sicherheit
+- Durch die Hashwerte kann zum einen kryptographisch sichergestellt werden, dass meine Daten nicht im Klartext an dritte gehen
+- zum anderen können durch die Hashwerte sogennante Merkle-Trees aufgestellt werden, welche die Integrität des Bitcoin-System sicherstellen 
 
 Bitte nennen Sie 3 Bedingungen, die erfüllt sein müssen, damit eine Hashfunktion aktuell als kryptographisch sicher gilt.
-
+- 256 BIt
+- Formel muss öffentlich sein(andere müssen diese ausprobieren können)
+- Muss eine Einwegfunktion sein
 
 ### Asynchrone Verschlüsselung / Public Key Verschlüsselung 
 1. Digitale Signaturen (Authentizität)   
 2. Verschlüsselung an sich (Privacy)  
 
 Bitte beschreiben Sie ein Szenario welches typisch ist für die Kombination aus 1 & 2 im Detail.
+Versenden von Datein
+- Signatur um sicherzsutellen, dass ich immer als Author des Dokuments feststehe
+- Verschlüsselung um meine Datei nicht für jeden im Internet zugänglich zu machen, sondenr nur der Person der ich die Datei schicke
 
 Inwiefern spielen digitale Signaturen bei Cryptowährungen wie Bitcoin & Ether eine wesentliche Rolle?  
 
 Beschreiben Sie ein Szenario, in welchem Alice an Bob eine vertrauliche Nachricht senden möchte und Bob sicher sein möchte, dass die Nachricht tatsächlich von Alice kommt. Hilfestellung: Was wird wann mit welchem Key verschlüsselt / entschlüsselt? 
-
+1. Alice bittet Bob darum ihm Geld auf ein bestimmtes Konto zu überwisen, um Konzertkarten für beide zu kaufen 
+2. Um die digitale signatur durchzuführen, verschlüsselt Alice ihren Text mit ihrem privaten Key. Daurch die verwendeung von Alice public key kann dieser nun wieder entschlüsselt werden, bzw. Danach kann Alice die Nachricht mit Bobs Upblic Key zusätzlich verschlüsseln, um die NAchricht nur für Bob zugänglich zu machen
 
 ### Datenstrukturen 
 #### Bloomfilter
@@ -43,11 +58,11 @@ h(3)=(x * 4)%11
 Wie sieht das Bitset jeweils nach dem Hinzufügen der folgenden Zahlen aus?  
 const exampleArray = [2, 5, 6]
 
---> Bitset nach dem Hinzufügen der 2:   
+--> Bitset nach dem Hinzufügen der 2:   (0,0,0,0,1,0,0,0,0,0,0)
 
---> Bitset nach dem Hinzufügen der 5:  
+--> Bitset nach dem Hinzufügen der 5:  (0,0,0,0,1,0,0,0,0,0,1)
 
---> Bitset nach dem Hinzufügen der 6:   
+--> Bitset nach dem Hinzufügen der 6:   (0,1,0,0,1,0,0,0,0,0,1)
 
 Würde der Bloomfilter für die folgenden Zahlen false positives liefern?  
 const entriesToBeValidated = [3, 34]  
