@@ -121,6 +121,8 @@ ape, apple, organ, organism
 
 
 ### Konsensalgorithmen 
+# Hier 
+## Fehlt was
 
 Bitte erläutern Sie die Notwendigkeit von Konsensalgorithmen in einem verteilten System wie z.B. der Ethereum Blockchain.  
 
@@ -142,7 +144,8 @@ Jemand behauptet dass die Ethereum Blockchain eine Stromverschwendung darstellt 
 - das ist falsch weil PoS verwendet wird und somit nur wenig Strom tatsächlich benötigt wird
 - Die verteilte Speciherung des Daten hat den Vorteil, dass die Macht der großen KOnzerne (z.B. Meta) eingeschränkt werden kann.
 
-
+# Hier 
+## Fehlt was
 ## Anwendungsgebiete der Blockchaintechnologie
 ### Digitale Währungen 
 Was sind für Sie die Hauptunterschiede zwischen einer Central Bank Digital Currency und einer Cryptowährung wie Ether? Was halten Sie von der potentiellen Einführung von Central Bank Digital Currencies? (ca. 7 Sätze)
@@ -155,6 +158,9 @@ Was halten Sie davon, dass Richard Nixon 1971 den Goldstandard aufgehoben hat? W
 Der folgende SC soll eine Währung namens QuinoaCoin mit den folgenden Eigenschafte definieren:  
 1. Nachkommastellen: 18
 2. Gesamtzahl an Tokens (fixed supply): 2000000
+
+# Hier 
+## Fehlt was
 
 Bitte streichen Sie fehlerhafte Zeilen und ersetzen Sie diese durch korrekte Anweisungen:   
 
