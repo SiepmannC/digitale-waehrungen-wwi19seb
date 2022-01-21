@@ -9,11 +9,8 @@ Was ist für Sie das revolutionär Neue an der Blockchaintechnologie?
 
 Inwiefern können wir eine Blockchain als öffentliche, verteilte Datenbank betrachten?
 
-Inwiefern ermöglicht die Blockchain Technologie Peer 2 Peer Geschäfte ohne zentralisierte Mittelsmänner / Institutionen?
-
-Beschreiben Sie ein Szenario, in welchem Sie eine dApp anstelle einer klassischen web app implementieren würden.
-
-Inwiefern könnte der Zeitraum der Veröffentlichung des Bitcoin Whitepapers (31.10.2008 in einer Kryptographie-Mailingliste der Cypherpunks) und der Zeitraum der globalen Finanzkrise 2008 miteinander zusammenhängen?
+Inwiefern ermöglicht die Blockchain Technologie Peer 2 Peer Geschäfte ohne zentralisierte Mittelsmänner / Institutionen?  
+Hilfestellung / gehen sie dabei vieleicht auf die folgenden Apekte ein...: welches sind die zentralen Institution im oldschool CeFi Sysem? Ohne die BC Technology mussten wir zentralen Instituitonen vertrauen...
 
 
 ### Einwegfunktionen
@@ -55,7 +52,7 @@ const exampleArray = [2, 5, 6]
 Würde der Bloomfilter für die folgenden Zahlen false positives liefern?  
 const entriesToBeValidated = [3, 34]  
 
-Lösungscheck siehe Unit Test des bloomfilter moduls
+Lösungscheck siehe https://deno.land/x/bloomfilter@v2.2.0#custom-hash-functions  
 
 Welche Vor- und Nachteile hat die Erhöhung der Anzahl an Bits im Bitset & welche Vor- und Nachteile hat die Erhöhung der Anzahl an genutzten Hash Funktionen bei Bloomfilters im Allgemeinen. Warum ist das so?  
 (https://hur.st/bloomfilter/?n=100000&p=0.6&m=&k=1)
@@ -148,6 +145,8 @@ contract QuinoaCoin is ERC20 {
 
 Hat eine Währung wie Bitcoin mit einem fixed / max. supply von 21.000.000 aus Ihrer Sicht eher eine inflationäre oder eine deflationäre Tendenz. Bitte erläutern Sie kurz ihre Einschätzung.
 
+Inwiefern könnte der Zeitraum der Veröffentlichung des Bitcoin Whitepapers (31.10.2008 in einer Kryptographie-Mailingliste der Cypherpunks) und der Zeitraum der globalen Finanzkrise 2008 miteinander zusammenhängen?
+
 
 ### Decentralized Finance
 Stichworte: Smart Contract based Lending, Borrowing, Yield Farming, Zahlungsverkehr, Investing
@@ -161,6 +160,11 @@ https://github.com/distributed-ledger-technology/airdrop
 ### Decentralized Web
 Permanent Deployment / Censorship resistant deployment
 Distributed Deployments / File Servers --> IPFS & DDNS- see https://ens.domains  
+
+Beschreiben Sie ein Szenario, in welchem Sie eine dApp anstelle einer klassischen web app implementieren würden.
+
+Welche Browserextension können Sie z.B. für google chrome nutzen, damit Besucher Ihrer dApp mit Smart Constracts der Ethereum Blockchain interagieren können? Bitte nennen Sie eine alternative zu dieser Browserextension.
+
 
 ### Kunst / Collectibles / GamingAssets - Non Fungible (ERC721) & Semi Fungible (ERC1155) Tokens 
 
@@ -217,10 +221,16 @@ Welche Informationen und Module benötigen Sie wenn Sie einen Airdrop für Ihre 
 
 
 ## Eigeninitiative / Eigeninteresse
-Describe you own favorite topic wrt. the Blockchain space (4 Punkte)    
+Describe you own favorite topic wrt. the Blockchain space (... wissenschaftlich / educational ... ) (4 Punkte)    
 
 
 
+
+
+
+
+# Tipp
+Erledigt in der Klausur zunächst die Aufgaben, welche Ihr von Eurem individuellen Flow her zügig erledigen könnt und macht Euch danach an die Aufgaben, welche etwas mehr Zeit / Geduld oder gar Kreativität beanspruchen. 
 
 
 
