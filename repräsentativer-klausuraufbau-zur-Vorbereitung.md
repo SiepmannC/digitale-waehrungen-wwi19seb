@@ -4,12 +4,22 @@
 
 ### Distributed Ledgers / Verteilte Logbücher
 Unter welchen Umständen ist die Nutzung von verteilten Logbüchern im Vergleich zu zentral verwalteten Logbüchern aus Ihrer Sicht empfehlenswert?
-- Daten werden verteilt und können nicht so leicht missbraucht werden
-- 
+- Daten/Kontrolle werden verteilt und können nicht so leicht missbraucht werden
+- Dezentralität bei Transaktionen ermöglicht es niemanden die Zahlungen zu verhindern oder zurückzuverfolgen
+- Anonymität
+- Übertragbarkeit (Digitales Geld)
+- Sicherheit/Transparenz
+#### Lösung
+1. Digital 
+2. Von verschienden Marktteilnehmer mit unterschiedlichen Intressen verwendet
+3. Keine Zentrale Instanz realisierbar (sonst eher Zentral)
+4. Aufwand für die Blockchain ist geringer als der Nutzen
 
 Was ist für Sie das revolutionär Neue an der Blockchaintechnologie?
 - Durch die dezantralität des Systems ist es möglich, die Macht der Internetanbieter wie Meta, Google etc. enzuschränken, weil sichergestellt werden kann, dass nicht jede meiner Anfragen über den Meta-Server geht, welcher Meine Informationen speichert und weiterverkauft (Hierbei besonders auf WEB3 bezogen)
 - Durch die Möglichkeit der der Blockchain Technnologie wird das "Internet of Things" ermöglicht, mit welches es möglich sein soll, dass ein Auto mit einer Ladesäule kommuniziert und mit dieser selbständig den Preis für den Strom festlegt 
+
+
 
 Inwiefern können wir eine Blockchain als öffentliche, verteilte Datenbank betrachten?
 - öffentlich weil jeder Zugriff auf das System hat und die Daten über alle Geräte verteilt abgespeichert werden, es gibt somit keine Zentrale anlaufstelle
@@ -18,22 +28,24 @@ Inwiefern können wir eine Blockchain als öffentliche, verteilte Datenbank betr
 Inwiefern ermöglicht die Blockchain Technologie Peer 2 Peer Geschäfte ohne zentralisierte Mittelsmänner / Institutionen?  
 Hilfestellung / gehen sie dabei vieleicht auf die folgenden Apekte ein...: welches sind die zentralen Institution im oldschool CeFi Sysem? Ohne die BC Technology mussten wir zentralen Instituitonen vertrauen...
 
-- Kommunikation über Chatprogramm läuft heutzutage so ab, dass unsere Nachrichten auf einem Zentralen Server bei z.B Meta gespeichert werden. Dabei haben wir nach dem Abschicken der Nachricht keinen Zugriff mehr auf diese, weil sie in einer Zentralen Datenbank abgepsiechert ist auf die wir keinen Zugriff haben. Wir müssen deswegen Meta vertrauen, dass unsere daten nicht misbracuht und weiterverkauft werden. WIe die Vergangenheit gezeigt hat ist dies nicht wirklich möglich. 
+- Online kaufen dann ist die Bank (2x) dazwischen, ansosnten könnte das Geld direkt an den Verkäufer gehen.
 - Durch Smart Contracts ist es dann möglich ohne die Zentralen Institute Verträge zu erstellen. Statt einen Mittelsmann wie die Webseite Crowdfunding, können die Investoren direkt mit dem Unternehmen den Vertrag erstellen. Wenn das Geld ausreicht wird es ausgezahlt, ansonsten geht es zurück an die Investoren
 
 ### Einwegfunktionen
 
 Welche Einwegfunktion spielt im Bitcoin System eine wesentliche Rolle bzw. zwei wesentliche Rollen? Bitte erläutern Sie dies.
 - Einwegfunktion ist die Hashfunktion
-- Aktuell wird Shar256 hauptsächlich verwednet
-- gibt aber auch Shar512 besipielsweise mit einer höheren Sicherheit
+- Aktuell wird Sha256 hauptsächlich verwednet
+- gibt aber auch Sha512 besipielsweise mit einer höheren Sicherheit
 - Durch die Hashwerte kann zum einen kryptographisch sichergestellt werden, dass meine Daten nicht im Klartext an dritte gehen
 - zum anderen können durch die Hashwerte sogennante Merkle-Trees aufgestellt werden, welche die Integrität des Bitcoin-System sicherstellen 
+- Proof of Work (Anzahl an Nullern muss vorne stehen und dafür wird das Gewicht hochgezählt (1,2,3,...))
+- Nicht zurück übersetzbar 
+- Davits Video hier einfügen (Warum Einweg, zurückrechnen
 
 Bitte nennen Sie 3 Bedingungen, die erfüllt sein müssen, damit eine Hashfunktion aktuell als kryptographisch sicher gilt.
-- 256 BIt
-- zurückrechnung muss nahezu unmöglich sein
-- der ENdwert für ein Input sollte nur einmlaig vorkommen und es sollte keinen zweiten Input geben, der den gleichen Wert erzeugt 
+- 256 Bit
+- der Endwert für ein Input sollte möglichst nur einmalig vorkommen und es sollte keinen zweiten Input geben, der den gleichen Wert erzeugt 
 - Formel muss öffentlich sein(andere müssen diese ausprobieren können)
 - Muss eine Einwegfunktion sein
 
@@ -47,6 +59,8 @@ Versenden von Datein
 - Verschlüsselung um meine Datei nicht für jeden im Internet zugänglich zu machen, sondenr nur der Person der ich die Datei schicke
 
 Inwiefern spielen digitale Signaturen bei Cryptowährungen wie Bitcoin & Ether eine wesentliche Rolle?  
+- Integrität der Chain
+- Jeder Signiert seine eigene Transaktion
 
 Beschreiben Sie ein Szenario, in welchem Alice an Bob eine vertrauliche Nachricht senden möchte und Bob sicher sein möchte, dass die Nachricht tatsächlich von Alice kommt. Hilfestellung: Was wird wann mit welchem Key verschlüsselt / entschlüsselt? 
 1. Alice bittet Bob darum ihm Geld auf ein bestimmtes Konto zu überwisen, um Konzertkarten für beide zu kaufen 
@@ -64,11 +78,12 @@ h(3)=(x * 4)%11
 Wie sieht das Bitset jeweils nach dem Hinzufügen der folgenden Zahlen aus?  
 const exampleArray = [2, 5, 6]
 
---> Bitset nach dem Hinzufügen der 2:   (0,0,0,0,1,0,0,0,0,0,0)
+--> Bitset nach dem Hinzufügen der 2:   (0,0,0,0,1,0,0,0,0,0,0)                                         
 
 --> Bitset nach dem Hinzufügen der 5:  (0,0,0,0,1,0,0,0,0,0,1)
 
---> Bitset nach dem Hinzufügen der 6:   (0,1,0,0,1,0,0,0,0,0,1)
+--> Bitset nach dem Hinzufügen der 6:   h(1)  = (0,1,0,0,1,0,0,0,0,0,1)
+    	                                   -> Für alle Hashfunktionen einzeln machen
 
 Würde der Bloomfilter für die folgenden Zahlen false positives liefern?  
 const entriesToBeValidated = [3, 34]  
