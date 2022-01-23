@@ -6,8 +6,7 @@
 
 ## Inwiefern können wir eine Blockchain als öffentliche, verteilte Datenbank betrachten?
 - performance 
-- einmal gespeichert geht nie wieder verloren (Frage ob das tatsächlich als Datenbank verstanden werden kann (Kein Delete)
-- 
+- einmal gespeichert geht nie wieder verloren (Frage ob das tatsächlich als Datenbank verstanden werden kann (Kein Delete)- 
 
 ## Welche Einwegfunktion spielt im Bitcoin System eine wesentliche Rolle bzw. zwei wesentliche Rollen? Bitte erläutern Sie dies.
 - Zurückrechnen?
@@ -25,3 +24,16 @@
 ## Würde der Bloomfilter für die folgenden Zahlen false positives liefern?  
 const entriesToBeValidated = [3, 34]  
 
+## Wie viele leading Nullen sind es im Bitcoin System?
+
+## Wie viele Zeichen sind im Bitcoin System durhc die Shar256 gegeben?  
+
+## 154
+
+## Wer bekommt das Geld aus den Tranaktions Fees?
+
+## Transaktionenskosten Bitcoin zu Bitcoin und Ether zu Ether? 
+
+## Kunst / Collectibles / GamingAssets | Was ist damit gemeint?
+
+## Welche Stable Coins mit Algorithmischer Absicherung gibt es?
