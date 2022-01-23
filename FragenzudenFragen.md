@@ -37,3 +37,10 @@ const entriesToBeValidated = [3, 34]
 ## Kunst / Collectibles / GamingAssets | Was ist damit gemeint?
 
 ## Welche Stable Coins mit Algorithmischer Absicherung gibt es?
+
+## On/Off Chain Wie im Detail?
+
+## Layer 2 Scaling
+
+## ABIs
+
