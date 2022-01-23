@@ -315,6 +315,7 @@ Warum werden AirDrops durchgeführt? (Multiple Choice)
 ## Layer 2 Scaling
 Inwiefern könnte Arbitrum die Adoption der Ethereum Technologie beschleunigen?   
 - Sind günstiger
+- schnellere Transaktionen
 
 ### Implementierungen
 #### TypeScript
