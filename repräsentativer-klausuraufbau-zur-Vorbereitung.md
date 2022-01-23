@@ -123,6 +123,8 @@ Bitte erläutern Sie mindestens einen Anwendungsfall von Merkletrees.
 
 Wie werden Merkle Trees im Kontext von Kryptowährungen eingesetzt?
 - Bitcoin, sicherstellen der Integrität der Blöcke
+- (Teil-)Validierung: Es müssen nicht alle Werte gesendet werden, sondern es reicht aus die leafnodes zu erhalten, mit denen ich die zu testenden Werte konkatenieren muss
+- 
 
 #### Tries
 https://deno.land/x/tries   
@@ -136,46 +138,66 @@ ape, apple, organ, organism
 
 
 ### Konsensalgorithmen 
-# Hier 
-## Fehlt was
 
 Bitte erläutern Sie die Notwendigkeit von Konsensalgorithmen in einem verteilten System wie z.B. der Ethereum Blockchain.  
+- PoW, PoS
+- Methode um alle Partein davon zu überzeugen, das die Blöcke die veröffentlicht werden der Wahrheit entsprechen
 
 Was ist das Kernprinzip hinter Proof of Work?  
-- Alle schauen ob der BLock richtig ist, nur einer bekommt den Zuschlag, Wahrscheinlichkeit für alle Gleich
+- Alle Miner versuchen einen passenden (16 Nuller zu beginn) root Hash zu finden, der den Block beschreibt. Nur einer bekommt den Zuschlag, Wahrscheinlichkeit pro Recheneinheit ist für alle gleich 
 
 Was ist das Kernprinzip hinter Proof of Stake?  
--Nur einer bekommt zuschlag, abhängig von der ANzahl der Währung, je mehr, je mehr validierungen kann man durchführen
+- Nur einer bekommt zuschlag, abhängig von der ANzahl der Währung die eingesetzt werden (Stake), je mehr, desto mehr validierungen kann man durchführen
+- Für die Validierung muss im Stake mehr Etherium sein als durch den Block gegeben sein
+- Durch eine gewisse zufallsauswahl kann die Verteilung auf die Nutzer gleichmäßiger verteilt werden
 
 Bitte erläutern Sie wie ein "51% Angriff" auf die Bitcoin Blockchain gestaltet werden könnte und wie ein potentieller Angreifer davon beispielsweise profitieren könnte. 
-- Ich benötige 51% der Validierungspower und kann damit auch Falsche Blöcke als richtig validieren. Durch das Shorten des Bitcoin wäre es dann möglich bei bekanntgabe des Problems viel Geld zu verdienen
+- Ich benötige 51% der Validierungspower und kann damit auch Falsche Blöcke als richtig validieren. Durch das Shorten des Bitcoin wäre es dann möglich bei bekanntgabe des    Problems viel Geld zu verdienen
+- Publizieren einer Abfolge von Blöcken die länger ist als alle anderen: man glaubt immer der längeren Kette 
+- Double Spending Möglichkeit durch die KOntrolle des Netzwerkes
+- Zensur der Blockchain möglich
 
 Was ist eine 51%-Attacke und wie unterscheiden sie sich bei unterschiedlichen Blockchain-Technologien (PoW, PoS)?
 Musterlösungen laut Kommilitonen: https://github.com/michael-spengler/digitale-waehrungen-wwi19seb/pull/14/files - bitte stets kritisch prüfen. 
 - Bei PoW benötige ich nur 51% der Minigpower
-- Bei PoS benötige ich 51% der Coins
+- Bei PoS benötige ich 51% der Coins im Stack
 
 Jemand behauptet dass die Ethereum Blockchain eine Stromverschwendung darstellt und viele der Anwendungen lieber zentral auf einem Server laufen sollten, um Strom zu sparen. Was sagen Sie? 
 - das ist falsch weil PoS verwendet wird und somit nur wenig Strom tatsächlich benötigt wird
-- Die verteilte Speciherung des Daten hat den Vorteil, dass die Macht der großen KOnzerne (z.B. Meta) eingeschränkt werden kann.
+- Die verteilte Speicherung der Daten hat den Vorteil, dass keine Zentrale Schnittstelle besteht und somit mehr Demokratie ermöglicht wird
+- Kein Vertrauen
+- Kein Einfrieren von Vermögen
+- Keine Transaktionseinschränkungen
+- Anonymität
+- Kosten für Mittelsmänner fallen weg (Transaktionskosten instead)
+- Limitation der Währung (Pro und Contra)
 
-# Hier 
-## Fehlt was
+
 ## Anwendungsgebiete der Blockchaintechnologie
 ### Digitale Währungen 
 Was sind für Sie die Hauptunterschiede zwischen einer Central Bank Digital Currency und einer Cryptowährung wie Ether? Was halten Sie von der potentiellen Einführung von Central Bank Digital Currencies? (ca. 7 Sätze)
-- 
+-CBCB: 
+
+-   Keine Absicherung der Währung durch Materielle Güter bei beiden Währung, Währungsstabilität
+-   Zentrale instanz besteht
+-   überwachte und gelenkte Währung
+-       schnellere Transaktionen
+-       Kriminalität kann eingeschränkt werden (Überwachen der Transaktionen)
+-       z.B. Geld wäsche 
+-       Totale Überwachung des States 
+-       Anonymität
+-       Beschränkung des CBDCs in anderen Ländern (Digitale Euro in China)   
+-       Direkten Zugang zur EZB möglich, Mittelsmann fällt weg      
+-  Ich sehe es 
 
 Was halten Sie davon, dass Richard Nixon 1971 den Goldstandard aufgehoben hat? Warum?   
 - Auf der einen Seite hat der Dollar damit außer dem Wert dem wir ihm selber zuweisen keine bedeutung mehr und ist papier
 - Andererseits war es damit möglich, ein Wirtschaftwachstum in den letzen zu ermöglich welches im Vergleich zu den Jahren zuvor nicht möglich gewesen wäre 
+- Dreist weil es so nicht besprochen war nach dem zweiten Weltkrieg
 
 Der folgende SC soll eine Währung namens QuinoaCoin mit den folgenden Eigenschafte definieren:  
 1. Nachkommastellen: 18
 2. Gesamtzahl an Tokens (fixed supply): 2000000
-
-# Hier 
-## Fehlt was
 
 Bitte streichen Sie fehlerhafte Zeilen und ersetzen Sie diese durch korrekte Anweisungen:   
 
@@ -190,11 +212,7 @@ contract QuinoaCoin is ERC20 {
 
 
     constructor () ERC20("QuinoaCoin", "QNC") { 
-    
-        
-        _mint(msg.sender, 2000*10**17);
-    
-    
+        _mint(msg.sender, 2000*10**17);   
     }
     
 }
@@ -205,14 +223,22 @@ Hat eine Währung wie Bitcoin mit einem fixed / max. supply von 21.000.000 aus I
 
 Inwiefern könnte der Zeitraum der Veröffentlichung des Bitcoin Whitepapers (31.10.2008 in einer Kryptographie-Mailingliste der Cypherpunks) und der Zeitraum der globalen Finanzkrise 2008 miteinander zusammenhängen?
 - Aus meiner Sicht gar nicht, Lehman Brothers wussten wahrscheinlich nichts davon und die Finanzkrise war durch das schlechte Haushalten der Jahre zuvor entstanden. Zu Anfang hat das Bitcoin Whitepapers auch noch keine Große bedeutung gehabt
-# Hier 
-## Fehlt was
+
+
 ### Decentralized Finance
 Stichworte: Smart Contract based Lending, Borrowing, Yield Farming, Zahlungsverkehr, Investing
 Was verstehen Sie unter dem Begriff DeFi? Wie wahrscheinlich ist es aus Ihrer Sicht, dass dieser Ansatz insgesamt an Bedeutung gewinnt? Warum?
+- SC based Lending:
+ - Leihen und Verleihen von Wähurng zwischen den Nutzern
+    - Geld in einen Pool einzahlen und dann mit Smart Contract auf die Lieher warten
+    - Sicherheiten müssen hinterlegt werden (100% Coins bekomme ich 75% Kredit) 
+- Yield Farmin:
+    - Verleihen von Geld
+- Aave, Compound
 
 ### Decentralized Governance 
 Stichwort: DAO  (Dezentralised Autonomus Orgaistation Rechtsform)
+Alle User treffen die Entscheidungen zusammen
 Votingpower hängt z.B. von der Anzahl der gesammelten governance tokens ab... 
 https://github.com/distributed-ledger-technology/airdrop
 
@@ -224,7 +250,7 @@ Beschreiben Sie ein Szenario, in welchem Sie eine dApp anstelle einer klassische
 - Ausnutzen der Censorship resistenz und beispielsweise WikiLeaks damit entwickeln
 
 Welche Browserextension können Sie z.B. für google chrome nutzen, damit Besucher Ihrer dApp mit Smart Constracts der Ethereum Blockchain interagieren können? Bitte nennen Sie eine alternative zu dieser Browserextension.
-- Binance, Sollet
+- Binance, Sollet, Metamask
 
 
 ### Kunst / Collectibles / GamingAssets - Non Fungible (ERC721) & Semi Fungible (ERC1155) Tokens 
@@ -256,13 +282,20 @@ Was verstehen Sie unter einem Stable Coin? Auf welche Arten können Stable Coins
 2. Absicherung durch Kryptowährungen (hohe schwankung der Sicherheit möglich)
 3. Algorithmische Absicherung (Algo gibt neue Coins in Markt oder nimmst siw wieder heraus (Aktuell noch vollatiler als die anderen)
 
-# Hier fehlt noch was
+
 ## Exchanges / Börsen
 Was sind für Sie Unterschiede zwischen zentralen Exchanges (e.b. binance.com, coinbase.com etc.) und dezentralen Exchanges (e.g. uniswap.org)? 
+- Zentrale:
+    - das Unternehmen behält über alle Transaktionen die verantwortung und uberwacht diese
+
+- Dezentral:
+    - Kontrolle über geld behalten
+    - Die Transaktionen sind in der Blockchain gespeichert – auf eine transparente und manipulationssichere Weise. Intermediäre sind nicht erforderlich, die Handelsbeziehungen finden Peer-to-Peer und damit direkt zwischen den Teilnehmern der Plattform statt
 
 ## On-Chain / Off-Chain Verbindungen
 Example: https://deno.land/x/airdrop@v0.1.0/example-airdrops/launch-airdrop-for-wwi19seb.ts ... via TypeScript programm
 Application Binary Interfaces Usage Example: https://deno.land/x/airdrop@v0.1.0/src/airdrop-service.ts#L16 ... um eine Repräsentation des Smart Contracts (der z.B. auf der Ethereum Blockchain deployed ist) im TypeScript Programm zu erhalten und damit Funktionen dieses Smart Contracts vom TypeScript Programm aus zu triggern.
+- 
 
 ## Mining
 Wofür steht die Abkürzung "ASIC" im Bezug auf Mininghardware?  
