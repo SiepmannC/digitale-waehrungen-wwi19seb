@@ -78,15 +78,17 @@ h3(x)=(x * 4)%11
 Wie sieht das Bitset jeweils nach dem Hinzufügen der folgenden Zahlen aus?  
 const exampleArray = [2, 5, 6]
 
---> Bitset nach dem Hinzufügen der 2:   (0,0,0,0,1,0,0,0,0,0,0)                                         
+--> Bitset nach dem Hinzufügen der 2:  (0,0,0,0,1,0,1,0,1,0,0)                                         
 
---> Bitset nach dem Hinzufügen der 5:  (0,0,0,0,1,0,0,0,0,0,1)
+--> Bitset nach dem Hinzufügen der 5:  (0,0,0,0,1,0,1,0,1,1,1)
 
---> Bitset nach dem Hinzufügen der 6:   h(1)  = (0,1,0,0,1,0,0,0,0,0,1)
-    	                                   -> Für alle Hashfunktionen einzeln machen
+--> Bitset nach dem Hinzufügen der 6:  (0,1,1,0,1,0,1,1,1,1,1)
+    	                                   
 
 Würde der Bloomfilter für die folgenden Zahlen false positives liefern?  
 const entriesToBeValidated = [3, 34]  
+Für 3 : (0,1,0,0,0,0,1,0,0,1,0) -> PERHAPS
+11: 2,3,3  -> NO
 
 Lösungscheck siehe https://deno.land/x/bloomfilter@v2.2.0#custom-hash-functions  
 
