@@ -6,7 +6,7 @@
 
 ## Inwiefern können wir eine Blockchain als öffentliche, verteilte Datenbank betrachten?
 - performance 
-- einmal gespeichert geht nie wieder verloren (Frage ob das tatsächlich als Datenbank verstanden werden kann (Kein Delete)- 
+- einmal gespeichert geht nie wieder etwas verloren (Frage ob das tatsächlich als Datenbank verstanden werden kann (Kein Delete)- 
 
 ## Welche Einwegfunktion spielt im Bitcoin System eine wesentliche Rolle bzw. zwei wesentliche Rollen? Bitte erläutern Sie dies.
 - Zurückrechnen?
@@ -15,7 +15,7 @@
 
 ## Inwiefern spielen digitale Signaturen bei Cryptowährungen wie Bitcoin & Ether eine wesentliche Rolle?  
 - Integrität der Chain
-- Jeder Signiert seine eigene Transaktion
+- Jeder signiert seine eigene Transaktion
 
 ## Angenommen Sie nutzen einen Bloomfilter mit einem Bitset der Länge 11 mit den Bloombits 0 bis 10 sowie den folgenden Einwegfunktionen zur Belegung der Bits: 
 
@@ -26,9 +26,9 @@ const entriesToBeValidated = [3, 34]
 
 ## Wie viele leading Nullen sind es im Bitcoin System?
 
-## Wie viele Zeichen sind im Bitcoin System durhc die Shar256 gegeben?  
+## Wie viele Zeichen sind im Bitcoin System durch den Shar256 gegeben?  
 
-## 154
+Bitte erläutern Sie wie ein "51% Angriff" auf die Bitcoin Blockchain gestaltet werden könnte und wie ein potentieller Angreifer davon beispielsweise profitieren könnte. 
 
 ## Wer bekommt das Geld aus den Tranaktions Fees?
 
