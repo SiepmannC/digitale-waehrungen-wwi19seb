@@ -2,7 +2,7 @@
 
 ## Was ist für Sie das revolutionär Neue an der Blockchaintechnologie?
 
-
+## Welche Fähigkeiten müssen wir in Solidty für die Klausur mitbringen?
 
 ## Inwiefern können wir eine Blockchain als öffentliche, verteilte Datenbank betrachten?
 - performance 
