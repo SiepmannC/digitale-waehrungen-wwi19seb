@@ -147,3 +147,9 @@ Welche Informationen und Module benötigen Sie wenn Sie einen Airdrop für Ihre 
 Describe you own favorite topic wrt. the Blockchain space (... wissenschaftlich / educational ... ) (4 Punkte)    
 
 
+## Wie gehen Sie vor wenn sie mit Typeskript und einen Smart Contract kommunizieren möchten
+- web3 Modul Deno
+
+## Angenommen Sie haben ein Programm in Typescript implementiert und möchten dieses in der Deno RTE zentral auf einem ihrer Server ausführen. Von diesem Programm aus möchten Sie nun auch mit einem Smart Contract welchen Sie auf der Ethereum BC deployed haben interagieren. Wie gehen Sie vor? 
+
+## Angenommen Sie haben ein UI in svelte oder angular oder vue implementiert und möchten Ihren Nutzern die Möglichkeit geben von Ihrem UI aus mit der ETH BC zu interagieren. Wie gehen sie vor? 
