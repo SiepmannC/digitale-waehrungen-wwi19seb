@@ -340,9 +340,22 @@ Describe you own favorite topic wrt. the Blockchain space (... wissenschaftlich 
 
 
 
+## Distributed Apps
+- Kein zentrales Element (Contentstorage (IPFS, Filecoin) (Domain (ens.domain  , .eth adress)
+- oder leicher Metamask integriert und die Möglichkeit mit Smart contrcts ist geboten  
+-  
+
+## OnChain
+Smart contracts
+Mit Smart contracts interagieren über Module von Web 3
+Über Metamask einbinden möglich
+
+## Wie gehen Sie vor wenn sie mit Typeskript und einen Smart Contract kommunizieren möchten
 
 
+## Angenommen Sie haben ein Programm in Typescript implementiert und möchten dieses in der Deno RTE zentral auf einem ihrer Server ausführen. Von diesem Programm aus möchten Sie nun auch mit einem Smart Contract welchen Sie auf der Ethereum BC deployed haben interagieren. Wie gehen Sie vor? 
 
+## Angenommen Sie haben ein UI in svelte oder angular oder vue implementiert und möchten Ihren Nutzern die Möglichkeit geben von Ihrem UI aus mit der ETH BC zu interagieren. Wie gehen sie vor? 
 
 # Tipp
 Erledigt in der Klausur zunächst die Aufgaben, welche Ihr von Eurem individuellen Flow her zügig erledigen könnt und macht Euch danach an die Aufgaben, welche etwas mehr Zeit / Geduld oder gar Kreativität beanspruchen. 
