@@ -93,7 +93,6 @@ Stichwort: DAO  (Dezentralised Autonomus Orgaistation Rechtsform)
 ### Decentralized Web
 
 Beschreiben Sie ein Szenario, in welchem Sie eine dApp anstelle einer klassischen web app implementieren würden.
-- Ausnutzen der Censorship resistenz und beispielsweise WikiLeaks damit entwickeln
 
 Welche Browserextension können Sie z.B. für google chrome nutzen, damit Besucher Ihrer dApp mit Smart Constracts der Ethereum Blockchain interagieren können? Bitte nennen Sie eine alternative zu dieser Browserextension.
 
