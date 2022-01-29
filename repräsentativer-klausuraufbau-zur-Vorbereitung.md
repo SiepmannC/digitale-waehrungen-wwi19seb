@@ -318,6 +318,11 @@ Warum werden AirDrops durchgeführt? (Multiple Choice)
 Inwiefern könnte Arbitrum die Adoption der Ethereum Technologie beschleunigen?   
 - Sind günstiger
 - schnellere Transaktionen
+- channels
+- rollups
+- sidechains
+- plasma
+- Performance, Sicherheit, Dezentralität
 
 ### Implementierungen
 #### TypeScript
