@@ -11,6 +11,7 @@ Bitte erläutern Sie die Notwendigkeit von Konsensalgorithmen in einem verteilte
 
 Bitte skizzieren Sie einen klassischen Trie sowie einen PATRICIA Trie für die folgenden Buchstabensequenzen: ape, apple, organ, organism
 
+## Frage
 Wie werden Merkle Trees im Kontext von Kryptowährungen eingesetzt?
 
 Bitte erläutern Sie mindestens einen Anwendungsfall von Merkletrees.
