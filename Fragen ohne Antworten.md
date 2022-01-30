@@ -21,6 +21,8 @@ Angenommen jemand behauptet im Beispielarray wäre eine 9 (anstelle der 1) entha
 Bitte erstellen Sie einen Merkletree für die Einträge im untenstehenden Beispiel Array unter Nutzung der darunter stehenden Einwegfunktion:
 const exampleArray = [2,7,8,1]
 
+h(x)=(x * 2)%10
+
 Bitte erläutern Sie mindestens einen Anwendungsfall von Bloomfilters.
 
 
