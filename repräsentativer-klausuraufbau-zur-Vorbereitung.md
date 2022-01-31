@@ -238,6 +238,13 @@ Was verstehen Sie unter dem Begriff DeFi? Wie wahrscheinlich ist es aus Ihrer Si
     - Verleihen von Geld
 - Aave, Compound
 
+1. Stable Coin
+2. Lending and Borrowing
+3. Decentralized Exchange
+4. Insurance
+5. Margin Trading
+
+
 ### Decentralized Governance 
 Stichwort: DAO  (Dezentralised Autonomus Orgaistation Rechtsform)
 Alle User treffen die Entscheidungen zusammen
